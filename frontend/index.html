@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CampusCore Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>🎓 CampusCore Dashboard</h1>
+
+    <div class="card">
+        <h2>Add Student</h2>
+
+        <div class="form-group">
+            <input type="number" id="id" placeholder="Student ID">
+            <input type="text" id="name" placeholder="Full Name">
+            <input type="text" id="course" placeholder="Course">
+            <input type="number" id="marks" placeholder="Marks">
+        </div>
+
+        <button class="primary-btn" onclick="addStudent()">Add Student</button>
+    </div>
+
+    <div class="card action-card">
+        <button onclick="getStudents()">📋 Show Students</button>
+        <button onclick="getTopper()">🏆 Show Topper</button>
+        <button onclick="getCount()">📊 Total Count</button>
+    </div>
+
+    <div class="card output-card">
+        <h2>Output</h2>
+        <pre id="output"></pre>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
