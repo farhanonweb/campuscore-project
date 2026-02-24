@@ -21,11 +21,26 @@ A Full Stack Student Management System built using Spring Boot (Backend) and HTM
 
 ## 📁 Project Structure
 
+```
 campuscore-project
- ├── backend
- │    └── campuscore-api
- └── frontend
-      └── campuscore-frontend
+│
+├── backend
+│   └── campuscore-api
+│       ├── pom.xml
+│       └── src
+│           └── main
+│               ├── java
+│               └── resources
+│
+├── frontend
+│   └── campuscore-frontend
+│       ├── index.html
+│       ├── style.css
+│       └── script.js
+│
+├── .gitignore
+└── README.md
+```
 
 ---
 
@@ -51,52 +66,60 @@ campuscore-project
 # 🔗 API Endpoints
 
 Base URL:
+```
 http://localhost:8080
+```
 
 ---
 
 ## 1️⃣ Add Student
 
-POST /addStudent
+**POST** `/addStudent`
 
 Sample JSON Body:
 
+```json
 {
   "id": 1,
   "name": "Farhan",
   "course": "Java",
   "marks": 90
 }
+```
 
 ---
 
 ## 2️⃣ Get All Students
 
-GET /students
+**GET** `/students`
 
 ---
 
 ## 3️⃣ Get Student By ID
 
-GET /students/{id}
+**GET** `/students/{id}`
 
 Example:
+```
 GET /students/1
+```
 
 ---
 
 ## 4️⃣ Delete Student
 
-DELETE /delete/{id}
+**DELETE** `/delete/{id}`
 
 Example:
+```
 DELETE /delete/1
+```
 
 ---
 
 ## 5️⃣ Get Topper
 
-GET /topper
+**GET** `/topper`
 
 Returns student with highest marks.
 
@@ -104,7 +127,7 @@ Returns student with highest marks.
 
 ## 6️⃣ Get Total Student Count
 
-GET /count
+**GET** `/count`
 
 Returns total number of students.
 
@@ -115,7 +138,9 @@ Returns total number of students.
 1. Open Postman
 2. Select method (GET / POST / DELETE)
 3. Enter URL:
+   ```
    http://localhost:8080/endpoint
+   ```
 4. For POST:
    - Go to Body → Raw → JSON
    - Paste JSON data
@@ -128,14 +153,20 @@ Returns total number of students.
 1. Open terminal
 2. Navigate to backend folder:
 
+```
 cd backend/campuscore-api
+```
 
 3. Run the application:
 
+```
 mvn spring-boot:run
+```
 
 Server will start at:
+```
 http://localhost:8080
+```
 
 ---
 
@@ -143,9 +174,11 @@ http://localhost:8080
 
 1. Go to:
 
+```
 frontend/campuscore-frontend
+```
 
-2. Open index.html in your browser
+2. Open `index.html` in your browser
 
 ⚠ Make sure backend is running before using frontend.
 
@@ -164,6 +197,6 @@ frontend/campuscore-frontend
 
 ## 👨‍💻 Author
 
-Farhan Gheri  
+**Farhan Gheri**  
 
 
